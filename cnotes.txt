@@ -1,0 +1,13 @@
+
+========== C notes basics==========
+  ========== 9/05/2021========
+
+1.Here ‘C’ programming language was developed in 1972 by Dennis Ritchie at AT&T(American Telephonic & Telegraphic) Bell Laboratories, New Jersey.
+2.C can be used for creating computer applications, writing embedded software and also for writing applications which extend an operating system's functionality.
+3.The core part of Linux operating system was completely developed in C language.
+
+The instructions (called the source code) written in C are saved in a file with .c extension. For eg: Calculator.c. This is the source file.
+
+There is a special program called compiler, which is used to compile the source file. Once compiled, an object file with extension .obj is created.
+
+There is yet another program called linker, which combines one or more object files to create a single executable file. The executable file can have any extension. For example, files in Windows usually have .exe extension. These files are executed to get the desired output.
