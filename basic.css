@@ -1,0 +1,199 @@
+/* ======universal selector *=======*/
+*{
+	font-family:sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	
+}
+body{
+              background:darkslategray;
+		}.std{
+			color: black;
+		}
+		.tabletr:hover {
+			background-color: #f5f5f5;}
+
+		  /* ======  css for task of movie rating=======*/
+		.rating{
+			  display:block;
+			  background: white;
+			  border: 10px inset orange;
+			  padding: 10px;
+			  color: black;
+		}
+		.rating h1{
+			  text-align: center;
+			    color:   dodgerblue;
+			    font-weight: bold;
+			    text-decoration: underline;
+
+		}
+		.rating img{
+			border-radius: 20px;
+			border: 9px inset green;
+			margin-left: 41%;
+			width: 200px;
+			height: 200px;
+		}
+		.rating input{
+			 text-align: center;
+			  margin-left: 41%;
+			  color:black;
+
+		}
+		.rating  select {
+                           text-align: center;
+			  margin-left: 41%;
+			  color: black;
+
+		} 
+        .rating  select ,option{
+                          color: black;
+        }
+
+		.marquee{
+                  color:white;
+					margin-top: 20px;
+					display:inline-grid;
+					background-color:dodgerblue;
+					margin: 40px 38% 40px 38%;
+					border-radius: 20px;
+					opacity: 1;
+					font-weight: bold;
+					font-size:18px;
+					
+				}/*------=======:#00ff7f;=====-*/
+				.marquee a{
+								text-decoration: none;
+								color: white;
+				}
+				.stdr{
+					background:white; 
+				}
+				footer{
+					margin-top: 20%;
+					background:linear-gradient(45deg,red,orange);
+					text-align: center;
+					color: white;
+				}
+				.img{
+					float: right;
+					width: 200px;
+					height: 200px;
+					border-radius: 20px;
+				}
+                .ex{
+				background-color:orange;
+				font-size: 20px;
+				}
+				.tags{
+					color: white;
+					 background-color:green;
+				}
+				video{
+					float: left;
+					width: 200px;
+					height: 200px;
+					border-radius: 20px;
+				}/*===== for html=====*/
+				.html{
+                       background-color:violet;
+                       color: white;
+                       font-size: 20px;
+				}
+				.uppena input{
+					border-left: 5px inset dodgerblue;
+				}
+
+				/* =======for box model======== */
+				.box_model{
+					background-color:black;
+					color: white;
+				}
+				.box_model h1{
+					color: dodgerblue;
+				}
+				/* =======for borders ======== */
+                 .border{
+                 	background-color: dodgerblue;
+                  color:white;
+                 }
+                 .border h2{
+                 	color:black;
+                 	text-align: center;
+                 	font-weight: bold;
+                 	font-size: 45px;
+                 }
+                  .border li{
+                  	margin-left: 8px;
+                  }
+                  #css{
+                  	background-color:black;
+                  	color: white;
+                  }
+                    .selector{
+                    	background-color:orange;
+                    	color: white;
+                    }
+                     .selector h2{
+                     	color: black;
+                     }
+                 .hover a:link{
+                          color:red;
+                          text-decoration: none;
+                     }
+                         aside{
+                         	background-color: darkcyan;
+                         	color: white;
+                         	float: center;
+                         	margin: 0 auto;
+                         	width: 225px;
+                         	height: 35vh;
+
+                         }
+                    .in{
+                    	background:linear-gradient(45deg,greenyellow,darkblue);
+                    	font-family: bold;
+                    }
+                    .in h1{
+                    	font-size: 30px;
+                    	text-align: center;
+                    	color:darkblue;
+                    }
+                    .in li{
+                    	color:white;
+                    	text-align: center;
+                    	font-size: 30px;
+
+                    }
+                    .as{
+                    	background-color: darkcyan;
+                    	float: right;
+                    }
+                    .ht5{
+                    	background:linear-gradient(45deg,darkcyan,greenyellow);
+                    }
+                    .f{
+                    	color: white;
+                    	 text-align: center;
+                    	 margin-left: 38%;
+                    }
+
+                    .ht5 h1{
+                             text-align: center;
+                             text-decoration: underline;
+                             font-size: 40px;
+                             color:gold;
+                    }
+                    .ht5 h2{
+                    	    text-align: center;
+                    	    font-size: 40px;
+                    }
+                    .ht5 li{
+                    	color: white;
+                    	margin-left: 10px;
+                    }
+                    .ht5 ol li {
+                    	  color: white;
+                    	    margin-left: 45%;
+                    }
