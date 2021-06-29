@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Vemu Notes</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <style>
+    .updates{
+       font-weight: bolder;
+       font-size: 30px;
+       text-decoration: underline;
+       color: darkblue;
+       margin-left: 5%;
+       text-transform: uppercase;
+    }
+  </style>
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/portifo.css" rel="stylesheet">
+  <script type="text/javascript">
+    filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">Vemu Notes</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <li><a class="nav-link scrollto" href="#notes">Notes</a></li>
+<!------====== commenting for cheking without dropdown list how it looks
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>=======--->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="forms/contact1.html">Login</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Best Material For Your Education</h1>
+          <h2>We Provide a Quality and Content Based Materials.. </h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Updates Section ====----->
+    <section id="updates" class="cliens section-bg">
+      <div class="container">
+             <h2 class="updates">Updates</h2>
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-12 col-md-4 col-6 d-block align-items-center justify-content-center">
+           <marquee direction="left" behaviour="scroll" style="color:dodgerblue; font-weight:bold;font-size: 20px;" >Very soon previous question papers are going to be release.......</marquee>
+          </div>
+<!-------=====commant this section
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt=""> 
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+     ======----->
+        </div>
+
+      </div>
+    </section>
+    <!----======= updates section ends here====---->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-12">
+            <p>
+          Actually Vemu Notes is a students project  to support the students in hard times  to get the required materails. During this Covid 19 Education mode completely changed to the online.so there are many who are unable to access the materials and ebooks for there refernce, we started this Vemu Notes to help them...
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> We help students to get good knowledge by providing ebooks.</li>
+              <li><i class="ri-check-double-line"></i>  To Access Vemu Notes is very simple & free of cost.</li>
+              <li><i class="ri-check-double-line"></i>You can Access the ebooks also and  trending Technologies in world.</li>
+            </ul>
+          </div>
+          <div class="col-lg-12 pt-4 pt-lg-0">
+            <a href="" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Notes  Section ======= -->
+    <section id="notes" class="notes section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-12 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+            	<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('CSE DEPARTMENT')">CSE DEPARTMENT </button>
+  <button class="btn" onclick="filterSelection('ECE DEPARTMENT')">ECE DEPARTMENT</button>
+  <button class="btn" onclick="filterSelection('EEE DEPARTMENT')"> EEE DEPARTMENT</button>
+  <button class="btn" onclick="filterSelection('CIVIL DEPARTMENT')">CIVIL DEPARTMENT</button>
+  <button class="btn" onclick="filterSelection('MECHANICAL DEPARTMENT')"> MECHANICAL DEPARTMENT</button>
+</div>
+
+<!-- notes grid -->
+<div class="row">
+  <div class="column CSE DEPARTMENT">
+    <div class="content">
+      <h4>I YEAR  I SEM</h4>
+      <a href="11.html" target="frame">click here</a>
+      <br>
+       <h4>I YEAR  II SEM</h4>
+             <a href="11.html" target="frame">click here</a>
+       <p>H&S</p>
+    </div>
+  </div>
+  <div class="column CSE DEPARTMENT">
+    <div class="content">
+        <h4>II YEAR  I SEM</h4>
+      <a href="2-1.html" target="frame">click here</a>
+      <br>
+      <h4>II YEAR  II SEM</h4>
+            <a href="2-1.html" target="frame">click here</a>
+       <p>CSE</p>
+    </div>
+  </div>
+  <div class="column CSE DEPARTMENT">
+    <div class="content">
+     <h4>III YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>III YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>CSE</p>
+    </div>
+  </div>
+  <div class="column CSE DEPARTMENT">
+    <div class="content">
+      <h4>IV YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>IV YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>CSE</p>
+    </div>
+  </div>
+  <div class=" column ECE DEPARTMENT ">
+    <div class="content">
+      <h4>I YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>I YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>ECE</p>
+    </div>
+  </div>
+  <div class=" column ECE DEPARTMENT">
+    <div class="content">
+     <h4>IIYEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>II YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>ECE</p>
+    </div>
+  </div>
+  <div class=" column ECE DEPARTMENT">
+    <div class="content">
+     <h4>III YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>III YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>ECE</p>
+    </div>
+  </div>
+  <div class=" column ECE DEPARTMENT">
+    <div class="content">
+    <h4>IV YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>IVYEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>ECE</p>
+    </div>
+  </div>
+  <div class=" column EEE DEPARTMENT ">
+    <div class="content">
+      <h4>I YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>I YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>EEE</p>
+    </div>
+  </div>
+  <div class=" column EEE DEPARTMENT">
+    <div class="content">
+     <h4>IIYEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>II YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>EEE</p>
+    </div>
+  </div>
+  <div class=" column EEE DEPARTMENT">
+    <div class="content">
+     <h4>III YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>III YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>EEE</p>
+    </div>
+  </div>
+  <div class=" column EEE DEPARTMENT">
+    <div class="content">
+    <h4>IV YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>IVYEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>EEE</p>
+    </div>
+  </div>
+ <div class=" column CIVIL DEPARTMENT ">
+    <div class="content">
+      <h4>I YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>I YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>CIVIL</p>
+    </div>
+  </div>
+  <div class=" column CIVIL DEPARTMENT">
+    <div class="content">
+     <h4>IIYEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>II YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>CIVIL</p>
+    </div>
+  </div>
+  <div class=" column CIVIL DEPARTMENT">
+    <div class="content">
+     <h4>III YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>III YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>CIVIL</p>
+    </div>
+  </div>
+  <div class=" column CIVIL DEPARTMENT">
+    <div class="content">
+    <h4>IV YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>IVYEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>CIVIL</p>
+    </div>
+  </div>
+  <div class=" column MECHANICAL DEPARTMENT ">
+    <div class="content">
+      <h4>I YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>I YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>MECHANICAL</p>
+    </div>
+  </div>
+  <div class=" column MECHANICAL DEPARTMENT">
+    <div class="content">
+     <h4>IIYEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>II YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>MECHANICAL</p>
+    </div>
+  </div>
+  <div class=" column MECHANICAL DEPARTMENT">
+    <div class="content">
+     <h4>III YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>III YEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>MECHANICAL</p>
+    </div>
+  </div>
+  <div class=" column MECHANICAL DEPARTMENT">
+    <div class="content">
+    <h4>IV YEAR  I SEM</h4>
+      <a href="#">click here</a>
+      <br>
+      <h4>IVYEAR  II SEM</h4>
+            <a href="#">click here</a>
+       <p>MECHANICAL</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+<marquee direction="left" behaviour=" scroll" class="marquee">VEMU NOTES</marquee>
+</div>
+</div>
+</div>
+</div>       
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= frame section of notes===--->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-12 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <iframe src="" width="120%" height="500vh" scrolling="no" style="border: none;" name="frame">
+              
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  <!----- End frames Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Vemu Notes provide the Quality notes and materails and ebooks for all years of b.tech .<br>
+          Very soon we are planing tom release the previous question papers of all regulations for B.Tech......</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-4 col-md-7 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Ebooks </a></h4>
+              <p>Ebooks are more important for b.tech students to refer and study the clear concepts of the subjects. So we provide ebooks......</p>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-7 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">PDFs</a></h4>
+              <p>High Quality of materials and notes.
+              along with this we provide ppts if possible...</p>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-7 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">PQPS</a></h4>
+              <p>We provide the previous Question papers to the students which help them to prepare for end exams..
+              very soon we are going to lanuach.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p>If Any one like this website and willing to do more projects with us then ,Dont think just hire us ,after we make that your decision is worthy and right . </p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="mailto:urvishnuchini2711">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Here is the Team of Vemu Notes who developed this wonderful Website .....</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/pic1.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Vishnu.k</h4>
+                <span>Team Lead</span>
+                <p>Student<br>
+                 Dept of CSE<br>
+                 Vemu Institute Of Technology</p>
+                <div class="social">
+                  <a href="mailto:urvishnuchini2711@gmail.com"><i class="ri-google-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/team2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dhanamaj</h4>
+                <span>Team Guide</span>
+                <p>Assoc Professor<br>
+                 Dept of CSE<br>
+                 Vemu Institute Of Technology
+      </p>
+                <div class="social">
+                  <a href="mailto:kanipakamdhanamjay@gmail.com"><i class="ri-google-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team3.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Prudhvi</h4>
+                 <span>Team Member</span>
+                <p>Student<br>
+                 Dept of CSE<br>
+                 Vemu Institute Of Technology</p>
+                <div class="social">
+                  <a href=""><i class="ri-google-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Roshini</h4>
+                 <span>Team Member</span>
+                <p>Student<br>
+                 Dept of CSE<br>
+                 Vemu Institute Of Technology</p>
+                <div class="social">
+                  <a href=""><i class="ri-google-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Here are the few Frequently Asking Questions from students and others.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Can we access the notes and materials for  free. <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Ofcousre it is free of cost to access the Notes and Materails and can download.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Can we have access the all department materials.<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes you can access the all department materials of required  subjects.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Is there  any PQPs ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes we have but we are going to launch very soon ......... </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">How to download the materials? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                Just open the sem subject of your required one,then there you can find download link -> click it .after that it automatically starts downloading into your local machine.......
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>If any one want to contact us and want to share your experience with  us,you can use below contact us form to contact us .....
+          You can share your suggestions ,comments and etc.......</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>VEMU INSTITUTE OF TECHNOLOGY<br>
+                   P.Kothakota ,Near pakala.
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>urvishnuchini2711@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9381103462</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124240.94537570351!2d79.03806141280555!3d13.317302254129533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad5f00f9ff3b47%3A0xad8debc4eea471d3!2sVemu%20institute%20of%20technology!5e0!3m2!1sen!2sin!4v1620925484626!5m2!1sen!2sin"frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Join our news letter to get latest updates and notes...</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-7 footer-contact">
+            <h3>Vemu Notes</h3>
+            <strong>Address:</strong><p>
+              p.kothakota <br>
+              Near Pakala<br>
+              Chittoor 517129<br>
+              <strong>Phone:</strong> +91 9381103462<br>
+              <strong>Email:</strong>urvishnuchini2711@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-7 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#notes">Notes</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#updates">Updates</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-7 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://vemu.org/">Vemu.org</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://www.vemublood.com/">Vemu Blood Bank</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://vemu.org/campus_radio">Vemu Campus Radio</a></li>
+            </ul>
+          </div>
+<!-------========comment this for future===----
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+---->
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy;  2021 Copyrights <strong><span>Vemu Notes</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="http://myportfolioh.ezyro.com/?i=1">Dhanamjay.k And Team</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

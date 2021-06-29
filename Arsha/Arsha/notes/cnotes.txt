@@ -1,0 +1,47 @@
+
+========== C notes basics==========
+  ========== 9/05/2021========
+
+1.Here ‘C’ programming language was developed in 1972 by Dennis Ritchie at AT&T(American Telephonic & Telegraphic) Bell Laboratories, New Jersey.
+2.C can be used for creating computer applications, writing embedded software and also for writing applications which extend an operating system's functionality.
+3.The core part of Linux operating system was completely developed in C language.
+
+The instructions (called the source code) written in C are saved in a file with .c extension. For eg: Calculator.c. This is the source file.
+
+There is a special program called compiler, which is used to compile the source file. Once compiled, an object file with extension .obj is created.
+
+There is yet another program called linker, which combines one or more object files to create a single executable file. The executable file can have any extension. For example, files in Windows usually have .exe extension. These files are executed to get the desired output.
+
+
+======escape sequences ===== 28/5/21==
+Escape sequences and their ASCII codes:
+Character	Bell	Backspace	Horizontal tab	Vertical tab	New line	Form feed	Carriage return	Double Quotation	Single Quotation	Question mark	Backslash	Null
+Escape Sequence	\a	\b	\t	\v	\n	\f	\r	\"	\'	\?	\	\0
+ASCII value	007	008	009	011	010	012	013	034	039	063	092	000
+
+-> C language is case sensitive.
+===== c language  character set====
+Uppercase alphabets: A to Z
+Lowercase alphabets: a to z
+Decimal digits: 0 to 9
+Special characters: + - * / % = < >  : ; , .’ “ ?! # \ ( ) { } _ [ ] & | ^ ~
+
+Escape sequences: \b \t \v \r \f \n \\ \' \"\? \0 \a
+-> An identifier is a sequence of characters. In C, identifiers can be formed by combining alphabets, digits and a special character underscore '_' .
+
+========= c certain keywords =====
+There are certain keywords in C which, when used along with a given data type can change certain attributes, like the memory space occupied by the data type etc.
+
+For example, storage space for an int data type is 4 bytes in a 32 bit processor. We can increase the storage space to 8 bytes by declaring it as long int. We can decrease the space occupied by using short int which will restrict it to 2 bytes.
+
+In the above example, long and short keywords are used to change the space allocated to an int data type. As a result, the maximum value which can be stored also changes.
+
+The four keywords given below can be used to modify certain attributes of numeric data types:
+unsigned: This keyword when used, informs that the specified data type can be used to accept only positive values.
+signed: This keyword when used, informs that the specified data type can accept both negative and positive values. When the keywords unsigned or signed are not used, the system will by default, assume the numeric data type to be signed.
+short: This keyword is used to decrease the size (storage space allocated) to a numeric data type.
+long: This keyword is used to increase the size (storage space allocated) to a numeric data type.
+ANSI C has the following rules:
+short int <= int <= long int
+
+float <= double <= long double
